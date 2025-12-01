@@ -1,0 +1,34 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/AccessDenied.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Profile.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header-nav ">
+        <a href="@Url.Action("Index", "Home")" class="logo">
+            <img src="@Url.Content("~/imagini/LogoToscana.png")" />
+        </a>
+        <nav class="navbar">
+            <a href="@Url.Action("Index", "Home")"><i class="bx bx-home-heart"></i>Home</a>
+            <a href="@Url.Action("Index", "Contact")"><i class="bx bxs-contact"></i>Contact</a>
+
+        </nav>
+    </header>
+    <div class="container">
+        <header>
+            <h1 class="text-danger">@ViewData["Title"]</h1>
+            <p class="text-danger">You do not have access to this resource.</p>
+        </header>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,186 @@
+﻿@using Pizzeria_Toscana.Services.Interfaces
+@using Pizzeria_Toscana.Services
+@model IEnumerable<Pizzeria_Toscana.Models.Produs>
+
+
+@{
+    ViewData["Title"] = "Meniu";
+    Layout = null;
+    var isSpecSearch = ViewBag.IsSpecSearch as bool? ?? false;
+    var specResults = ViewBag.SpecResults as IEnumerable<SearchResult>;
+    var sortOrder = ViewBag.SortOrder as string ?? "desc";
+    var specQuery = ViewBag.SpecQuery as string ?? "";
+    var searchQuery = ViewBag.searchQuery as string ?? "";
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="~/css/Categorie.css">
+    <link rel="stylesheet" href="~/css/Search.css">
+    <link rel="stylesheet" href="~/css/SpecRez.css">
+</head>
+<body class="meniu-body">
+    <header class="header-nav">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a asp-page="/Index" class="">
+                    <img src="~/imagini/LogoToscana.png" alt="Logo Pizzeria Toscana">
+                </a>
+                <a href="@Url.Action("Index", "Meniu")"><i class='bx bxs-food-menu'></i>Meniu</a>
+                <a href="@Url.Action("Index", "Cos")"><i class="fa fa-shopping-cart"></i>Cos</a>
+                <a href="@Url.Action("Index", "IstoricComenzi")"><i class="fa fa-history"></i>IstoricComenzi</a>
+                <a href="@Url.Page("/Account/Manage/Index", new { area = "Identity" })"><i class="bx bx-cog"></i>Setari</a>
+            </div>
+        </nav>
+        <div>
+            <partial name="_LoginPartial" />
+        </div>
+    </header>
+
+    <main class="main-menu">
+        <h1 class="menu-title">▂▃▅▇█▓▒░ 𝐌𝐄𝐍𝐈𝐔 ░▒▓█▇▅▃▂</h1>
+        @if (User.IsInRole("Admin"))
+        {
+            <a href="@Url.Action("Index", "Admin")" class="btn btn-primary btn-admin">
+                <i class="fas fa-cogs"></i> Gestionare Produse
+            </a>
+        }
+    </main>
+    <div class="switch-button-container" style="text-align: center; margin-bottom: 1rem;">
+        <button id="switchSearchBtn" class="btn btn-secondary" onclick="toggleSearchGrids()">Comută căutarea</button>
+    </div>
+
+    <div class="search-container" id="productSearchContainer" style="@(isSpecSearch ? "display:none;" : "display:block;")">
+        <form id="searchForm" class="filter-form" method="get" action="@Url.Action("Index", "Meniu")">
+            <input type="text" id="searchQuery" name="searchQuery" placeholder="Caută produse..." oninput="fetchSuggestions(this.value)" autocomplete="off" value="@searchQuery" />
+            <div id="suggestions" class="suggestions-dropdown"></div>
+            <button type="submit">Caută</button>
+        </form>
+    </div>
+
+    <div class="search-container" id="specSearchContainer" style="@(isSpecSearch ? "display:block;" : "display:none;")">
+        <form method="get" action="@Url.Action("SearchSpecs", "Meniu")" class="filter-form">
+            <input type="text" name="specQuery" placeholder="Caută în specificații" value="@specQuery" />
+            <select name="sortOrder">
+                <option value="desc" selected="@(sortOrder == "desc")">Sort Desc ↓</option>
+                <option value="asc" selected="@(sortOrder == "asc")">Sort Asc ↑</option>
+            </select>
+            <button type="submit">Caută</button>
+        </form>
+    </div>
+    @if (isSpecSearch && specResults != null && specResults.Any())
+    {
+        <div class="spec-results-window themed">
+            <h3 class="spec-results-title">Rezultate pentru căutarea in specificații: <span>"@specQuery"</span></h3>
+            <div class="spec-results-list">
+                @foreach (var result in specResults)
+                {
+                    var product = Model.FirstOrDefault(p => p.COD_Produs== result.COD_Produs);
+                    if (product != null)
+                    {
+                        <div class="spec-result-card dark-card">
+                            <div class="spec-card-header">
+                                <strong>@product.Denumire</strong>
+                            </div>
+                            <div class="spec-card-footer">
+                                <span class="spec-score">Score: @Math.Round(result.Score, 2)</span>
+ 
+                            </div>
+                        </div>
+
+                    }
+                }
+            </div>
+        </div>
+    }
+
+    <main class="container mt-4">
+        <div class="row">
+            <!-- Sidebar pentru categorii -->
+            <aside class="category-menu col-md-3">
+                <h4>Categorii</h4>
+                <ul>
+                    <li>
+                        <a href="@Url.Action("Index", "Meniu", new { categorieId = (int?)null })">Toate Produsele</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Meniu", new { categorieId = 1 })">Vegana</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Index", "Meniu", new { categorieId = 2 })">Non-Vegana</a>
+                    </li>
+                </ul>
+            </aside>
+            </div>
+            <div class="elements-cos">
+                @if (!Model.Any())
+                {
+                    <p class="text-center">Nu există produse disponibile în această categorie.</p>
+                }
+                else
+                {
+                    foreach (var produs in Model)
+                    {
+                        <div class="item-cos">
+                          
+                            @if (produs.ProdusPicture != null)
+                            {
+                                <img src="data:image/jpeg;base64,@Convert.ToBase64String(produs.ProdusPicture)"
+                                     alt="@produs.Denumire" />
+                            }
+                            else
+                            {
+                                <img src="~/imagini/default.png" alt="Imagine Lipsă" />
+                            }
+                            <h3>@produs.Denumire</h3>
+                        <a href="@Url.Action("DownloadProductSpecification", "Produs", new { productId = produs.COD_Produs })"
+                           class="btn btn-secondary btn-sm mt-2">
+                            <i class="fas fa-file-pdf"></i> Descarca fisa produsului
+                        </a>
+                            <p><strong>Preț:</strong> @produs.Pret lei</p>
+                        
+
+                        <p class="product-description">@produs.Descriere</p>
+                            <form method="post" action="@Url.Action("AdaugaInCos", "Produs")">
+                                <input type="hidden" name="productId" value="@produs.COD_Produs" />
+                                <button type="submit" class="delete-btn">
+                                    Adaugă în coș
+                                </button>
+                            </form>
+                            @if (produs.ID_Categorie == 1)
+                            {
+                                <span class="badge bg-success">Vegana</span>
+                            }
+                            else if (produs.ID_Categorie == 2)
+                            {
+                                <span class="badge bg-danger">Non-Vegana</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Alt Tip</span>
+                            }
+                        </div>
+                    }
+                }
+            </div>
+    </main>
+    <footer>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Search.js"></script>
+    <script src="~/js/Switch.js"></script>
+</body>
+</html>

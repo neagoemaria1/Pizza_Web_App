@@ -1,0 +1,77 @@
+﻿/* Containerul principal pentru rezultatele din specificații */
+.spec-results-window {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Tematica suplimentară – poți schimba culoarea după preferințe */
+    .spec-results-window.themed {
+        border: 2px solid #007bff;
+    }
+
+/* Titlul secțiunii, centrat și bine evidențiat */
+.spec-results-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Containerul pentru lista de rezultate – flexbox pentru aranjare centrată */
+.spec-results-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Stilul fiecărui card de rezultat */
+.spec-result-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+    /* Efect de hover pentru carduri */
+    .spec-result-card:hover {
+        transform: translateY(-5px);
+    }
+
+/* Variantele de card întunecat – poți ajusta culorile */
+.dark-card {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Header-ul cardului – evidențiat cu o culoare de accent */
+.spec-card-header {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+/* Footer-ul cardului – pentru afișarea scorului */
+.spec-card-footer {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #e9ecef;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Stilizarea scorului */
+.spec-score {
+    font-weight: bold;
+    color: #dc3545;
+}

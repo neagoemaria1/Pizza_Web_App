@@ -1,0 +1,114 @@
+﻿@page
+@model Pizzeria_Toscana.Areas.Identity.Pages.Account.Manage.IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Profile.css" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="https://unpkg.com/boxicons@2.1.4/svg/solid/bxs-cog.svg">
+</head>
+
+<body class="basic-body">
+    <header class="header-nav">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a asp-page="/Index" class="logo">
+                    <img src="~/imagini/LogoToscana.png" alt="Logo Pizzeria Toscana">
+                </a>
+                <a href="@Url.Action("Index", "Meniu")"><i class='bx bxs-food-menu'></i>Meniu</a>
+                <a href="@Url.Action("Index", "Cos")"><i class="fa fa-shopping-cart"></i>Cos</a>
+                <a href="@Url.Action("Index", "IstoricComenzi")"><i class="fa fa-history"></i>IstoricComenzi</a>
+                <a href="@Url.Page("/Account/Manage/Index", new { area = "Identity" })"><i class="bx bx-cog"></i>Setari</a>
+            </div>
+        </nav>
+        <div class="">
+            <partial name="_LoginPartial" />
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-leftbox">
+            <nav class="profile-nav">
+                <a href="#" id="infoLink" data-target="profile" data-title="Pizzeria Toscana/Profile - Personal Info">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="/Identity/Account/Manage/ChangePassword" id="passwordLink" data-title="Change Password">
+                    <i class="fa fa-key"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="profile-rightbox" id="profile-rightbox">
+            <div class="profile" id="profile">
+                <h1>Personal Info</h1>
+                @if (!string.IsNullOrEmpty(Model.StatusMessage))
+                {
+                    <div class="status-message">@Model.StatusMessage</div>
+                }
+                <form id="profile-form" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3 text-center">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                @if (Model.Input.ProfilePicture != null)
+                                {
+                                    <img id="profilePicture" src="data:image/*;base64,@(Convert.ToBase64String(Model.Input.ProfilePicture))">
+                                }
+                                else
+                                {
+                                    <img id="profilePicture" src="">
+                                }
+                                <label for="file-upload" class="custom-file-upload">
+                                    Choose Profile Picture
+                                </label>
+                                <input id="file-upload" type="file" accept="image/*" asp-for="Input.ProfilePicture" onchange="document.getElementById('profilePicture').src = window.URL.createObjectURL(this.files[0])" />
+                                <span asp-validation-for="Input.ProfilePicture" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Prenume"></label>
+                                <input asp-for="Input.Prenume" class="form-control" />
+                                <span asp-validation-for="Input.Prenume" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Nume"></label>
+                                <input asp-for="Input.Nume" class="form-control" />
+                                <span asp-validation-for="Input.Nume" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Adresa"></label>
+                                <input asp-for="Input.Adresa" class="form-control" />
+                                <span asp-validation-for="Input.Adresa" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Telefon"></label>
+                                <input asp-for="Input.Telefon" class="form-control" />
+                                <span asp-validation-for="Input.Telefon" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" />
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <button id="profileSaveButton" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

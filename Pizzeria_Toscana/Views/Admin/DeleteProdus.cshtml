@@ -1,0 +1,69 @@
+﻿@model Pizzeria_Toscana.Models.Produs
+
+@{
+    ViewData["Title"] = "StergereProdus";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/DeleteProdus.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/atisawd/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-dyB9c6UB43xpGu1pl6aKyZLMiD4wZRYN27fbB3xD3ynE6tCTqG1tf0t4NFOgaQUz" crossorigin="anonymous">
+
+</head>
+<body class="contact-body">
+
+    <header class="header-nav">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a asp-page="/Index" class="logo">
+                    <img src="~/imagini/LogoToscana.png" alt="Logo Pizzeria Toscana">
+                </a>
+                <a href="@Url.Action("Index", "Home")"><i class="fas fa-home icon-home"></i>Home</a>
+                <a href="@Url.Action("Index", "Meniu")"><i class='bx bxs-food-menu'></i>Meniu</a>
+                <a href="@Url.Action("Index", "Cos")"><i class="fa fa-shopping-cart"></i>Cos</a>
+
+                </a>
+                <a href="@Url.Page("/Account/Manage/Index", new { area = "Identity" })"><i class="bx bx-cog"></i>Setari</a>
+            </div>
+        </nav>
+        <div class="">
+            <partial name="_LoginPartial" />
+
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="card shadow-sm p-4">
+            <h3 class="text-center text-danger mb-4">Esti sigur că vrei sa stergi acest produs?</h3>
+
+            <div class="text-center mb-4">
+                <strong>@Model.Denumire</strong> - @Model.Pret Lei
+            </div>
+
+            @if (Model.ProdusPicture != null)
+            {
+                <div class="text-center mb-4">
+                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ProdusPicture)" alt="Imagine Produs" class="img-fluid" style="max-height: 200px;" />
+                </div>
+            }
+
+            <form asp-action="DeleteProdusConfirmed" asp-route-id="@Model.COD_Produs" method="post" class="text-center">
+                <button type="submit" class="btn btn-danger">Șterge</button>
+                <a href="@Url.Action("Index", "Admin")" class="btn btn-secondary">Anulează</a>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

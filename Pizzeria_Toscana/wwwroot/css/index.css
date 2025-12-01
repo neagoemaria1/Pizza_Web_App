@@ -1,0 +1,25 @@
+﻿
+.text-center {
+    margin-top: 5rem;
+}
+
+.table img {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+a:hover {
+    color: #007bff;
+}

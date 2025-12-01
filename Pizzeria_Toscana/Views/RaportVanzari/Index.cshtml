@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Raport Vânzări";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/atisawd/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="icon" type="image/svg+xml" href="https://unpkg.com/boxicons@2.1.4/svg/solid/bxs-time.svg">
+
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/istoriccomenzi.css")" />
+</head>
+<body class="meniu-body">
+
+    <header class="header-nav">
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <a asp-page="/Index" class="logo">
+                    <img src="~/imagini/LogoToscana.png" alt="Logo Pizzeria Toscana">
+                </a>
+                <a href="@Url.Action("Index", "Meniu")"><i class='bx bxs-food-menu'></i>Meniu</a>
+                <a href="@Url.Action("Index", "Cos")"><i class="fa fa-shopping-cart"></i>Cos</a>
+                <a href="@Url.Action("Index", "IstoricComenzi")"><i class="fa fa-history"></i>IstoricComenzi</a>
+                <a href="@Url.Action("Index", "Ingredient")"><i class="fa fa-leaf"></i>Gestionare Ingrediente</a>
+                <a href="@Url.Action("Index", "Admin")"><i class="fa fa-pizza-slice"></i>Gestionare Produse</a>
+                <a href="@Url.Page("/Account/Manage/Index", new { area = "Identity" })"><i class="bx bx-cog"></i>Setari</a>
+            </div>
+        </nav>
+        <div class="">
+            <partial name="_LoginPartial" />
+
+        </div>
+    </header>
+
+<h2 class="text-center">📊 Raport Vânzări</h2>
+
+@if (ViewBag.ProduseVandute == null)
+{
+    <div class="alert alert-warning text-center">
+        ⚠️ Nu există produse vândute sau nu s-au înregistrat comenzi.
+    </div>
+}
+else
+{
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Imagine</th>
+                    <th>Produs</th>
+                    <th>Preț Unitar</th>
+                    <th>Cantitate Vândută</th>
+                    <th>Suma Totală Încasată</th>
+                    <th>Fișă Produs</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var produs in (IEnumerable<dynamic>)ViewBag.ProduseVandute)
+                {
+                    <tr>
+                        <td>
+                            <img src="@produs.Imagine" alt="@produs.Denumire" width="50" height="50">
+                        </td>
+                        <td>@produs.Denumire</td>
+                        <td>@produs.Pret.ToString("C", new System.Globalization.CultureInfo("ro-RO"))</td>
+                        <td>@produs.Cantitate buc.</td>
+                        <td>@produs.SumaTotala.ToString("C", new System.Globalization.CultureInfo("ro-RO"))</td>
+                        <td>
+                            <a href="@Url.Action("DownloadProductSpecification", "Produs", new { productId = produs.COD_Produs })"
+                               class="btn btn-danger btn-sm">
+                                <i class="fas fa-file-pdf"></i> Descarcă PDF
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+}
+</body>
+</html>

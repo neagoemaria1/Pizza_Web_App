@@ -1,0 +1,645 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pizzeria_Toscana.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pizzeria_Toscana.h1utznetmr.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\assets\\default_user.png",
+      "PackagePath": "staticwebassets\\assets\\default_user.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\assets\\password.png",
+      "PackagePath": "staticwebassets\\assets\\password.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\assets\\user.png",
+      "PackagePath": "staticwebassets\\assets\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\AccessDenied.css",
+      "PackagePath": "staticwebassets\\css\\AccessDenied.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\Categorie.css",
+      "PackagePath": "staticwebassets\\css\\Categorie.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\CreateProdus.css",
+      "PackagePath": "staticwebassets\\css\\CreateProdus.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\DeleteProdus.css",
+      "PackagePath": "staticwebassets\\css\\DeleteProdus.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\EditProdus.css",
+      "PackagePath": "staticwebassets\\css\\EditProdus.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\Search.css",
+      "PackagePath": "staticwebassets\\css\\Search.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\SpecRez.css",
+      "PackagePath": "staticwebassets\\css\\SpecRez.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\ingredientCRUD.css",
+      "PackagePath": "staticwebassets\\css\\ingredientCRUD.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\istoriccomenzi.css",
+      "PackagePath": "staticwebassets\\css\\istoriccomenzi.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\loginPartial.css",
+      "PackagePath": "staticwebassets\\css\\loginPartial.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\register_login.css",
+      "PackagePath": "staticwebassets\\css\\register_login.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\css\\success.css",
+      "PackagePath": "staticwebassets\\css\\success.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\30%.jpg",
+      "PackagePath": "staticwebassets\\imagini\\30%.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\F2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\F2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\F4.jpg",
+      "PackagePath": "staticwebassets\\imagini\\F4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal10.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal3.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal4.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal8.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal_Fun.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal_Fun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\Fundal_Special.jpg",
+      "PackagePath": "staticwebassets\\imagini\\Fundal_Special.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\H4.jpg",
+      "PackagePath": "staticwebassets\\imagini\\H4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\HOT.jpg",
+      "PackagePath": "staticwebassets\\imagini\\HOT.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\LogoToscana.png",
+      "PackagePath": "staticwebassets\\imagini\\LogoToscana.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\T1.jpg",
+      "PackagePath": "staticwebassets\\imagini\\T1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\T2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\T2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\T3.jpg",
+      "PackagePath": "staticwebassets\\imagini\\T3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\T31.jpg",
+      "PackagePath": "staticwebassets\\imagini\\T31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\choose.jpg",
+      "PackagePath": "staticwebassets\\imagini\\choose.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\creator.jpg",
+      "PackagePath": "staticwebassets\\imagini\\creator.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\delivery.jpg",
+      "PackagePath": "staticwebassets\\imagini\\delivery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\error.PNG",
+      "PackagePath": "staticwebassets\\imagini\\error.PNG"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\fresh.jpg",
+      "PackagePath": "staticwebassets\\imagini\\fresh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\fundal6.jpg",
+      "PackagePath": "staticwebassets\\imagini\\fundal6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\fundal777.jpg",
+      "PackagePath": "staticwebassets\\imagini\\fundal777.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\history.jpg",
+      "PackagePath": "staticwebassets\\imagini\\history.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\home.png",
+      "PackagePath": "staticwebassets\\imagini\\home.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\locatie.jpg",
+      "PackagePath": "staticwebassets\\imagini\\locatie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\login.png",
+      "PackagePath": "staticwebassets\\imagini\\login.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\logo.png",
+      "PackagePath": "staticwebassets\\imagini\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\lovepizza.jpg",
+      "PackagePath": "staticwebassets\\imagini\\lovepizza.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\m1.jpg",
+      "PackagePath": "staticwebassets\\imagini\\m1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\m2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\m2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\m3.jpg",
+      "PackagePath": "staticwebassets\\imagini\\m3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\m4.jpg",
+      "PackagePath": "staticwebassets\\imagini\\m4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\papanasi.jpg",
+      "PackagePath": "staticwebassets\\imagini\\papanasi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza.png",
+      "PackagePath": "staticwebassets\\imagini\\pizza.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza1.jpg",
+      "PackagePath": "staticwebassets\\imagini\\pizza1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\pizza2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza3.jpg",
+      "PackagePath": "staticwebassets\\imagini\\pizza3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza4.jpg",
+      "PackagePath": "staticwebassets\\imagini\\pizza4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza5.jpg",
+      "PackagePath": "staticwebassets\\imagini\\pizza5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\pizza_speciala.png",
+      "PackagePath": "staticwebassets\\imagini\\pizza_speciala.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\promotia_nehotaratului.png",
+      "PackagePath": "staticwebassets\\imagini\\promotia_nehotaratului.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\promotie.PNG",
+      "PackagePath": "staticwebassets\\imagini\\promotie.PNG"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\success.png",
+      "PackagePath": "staticwebassets\\imagini\\success.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\team.jpg",
+      "PackagePath": "staticwebassets\\imagini\\team.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\team2.jpg",
+      "PackagePath": "staticwebassets\\imagini\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\team3.jpg",
+      "PackagePath": "staticwebassets\\imagini\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\wishList.jpg",
+      "PackagePath": "staticwebassets\\imagini\\wishList.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\wish_pizza.PNG",
+      "PackagePath": "staticwebassets\\imagini\\wish_pizza.PNG"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\imagini\\yt5s.io-Pico PIZZA - Daniel Schiffer B Roll (online-video-cutter.com).mp4",
+      "PackagePath": "staticwebassets\\imagini\\yt5s.io-Pico PIZZA - Daniel Schiffer B Roll (online-video-cutter.com).mp4"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\F1.jpg",
+      "PackagePath": "staticwebassets\\img\\F1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\F2.jpg",
+      "PackagePath": "staticwebassets\\img\\F2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\F3.jpg",
+      "PackagePath": "staticwebassets\\img\\F3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\F4.jpg",
+      "PackagePath": "staticwebassets\\img\\F4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal1.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal2.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal3.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal4.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\Fundal5.jpg",
+      "PackagePath": "staticwebassets\\img\\Fundal5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\FundalDelicat.jpg",
+      "PackagePath": "staticwebassets\\img\\FundalDelicat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\T4.jpg",
+      "PackagePath": "staticwebassets\\img\\T4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\img\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\b1.png",
+      "PackagePath": "staticwebassets\\img\\b1.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\b2.png",
+      "PackagePath": "staticwebassets\\img\\b2.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\b3.png",
+      "PackagePath": "staticwebassets\\img\\b3.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\b4.png",
+      "PackagePath": "staticwebassets\\img\\b4.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\creator.png",
+      "PackagePath": "staticwebassets\\img\\creator.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\creator1.jpg",
+      "PackagePath": "staticwebassets\\img\\creator1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\delivery.jpg",
+      "PackagePath": "staticwebassets\\img\\delivery.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\pizza_creator.jpg",
+      "PackagePath": "staticwebassets\\img\\pizza_creator.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\pizza_speciala.png",
+      "PackagePath": "staticwebassets\\img\\pizza_speciala.png"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\img\\tasty.jpg",
+      "PackagePath": "staticwebassets\\img\\tasty.jpg"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\js\\CreateIngredient.js",
+      "PackagePath": "staticwebassets\\js\\CreateIngredient.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\js\\Search.js",
+      "PackagePath": "staticwebassets\\js\\Search.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\js\\Setari.js",
+      "PackagePath": "staticwebassets\\js\\Setari.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\js\\Switch.js",
+      "PackagePath": "staticwebassets\\js\\Switch.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\neago\\Desktop\\Proiect_RI\\Pizzeria_Toscana\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pizzeria_Toscana.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pizzeria_Toscana.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pizzeria_Toscana.props",
+      "PackagePath": "build\\Pizzeria_Toscana.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pizzeria_Toscana.props",
+      "PackagePath": "buildMultiTargeting\\Pizzeria_Toscana.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pizzeria_Toscana.props",
+      "PackagePath": "buildTransitive\\Pizzeria_Toscana.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
