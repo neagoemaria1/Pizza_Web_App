@@ -22,18 +22,21 @@ namespace Pizzeria_Toscana.Controllers
         [HttpGet("{ip}")]
         public string Get(string ip)
         {
-            // Validate the ip parameter to avoid command injection
-            if (string.IsNullOrWhiteSpace(ip) || !(System.Net.IPAddress.TryParse(ip, out _) || IsValidHostName(ip)))
-                throw new ArgumentException("Invalid IP address or hostname.", nameof(ip));
+            // Only allow valid IP addresses to avoid command injection
+            if (string.IsNullOrWhiteSpace(ip) || !System.Net.IPAddress.TryParse(ip, out _))
+                throw new ArgumentException("Invalid IP address.", nameof(ip));
 
-            var commandToExecute = $"ping -c {ip}";
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("ping", $"-c {ip}");
+            // Build command safely using ArgumentList to avoid injection
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("ping");
+            processStartInfo.ArgumentList.Add("-c");
+            processStartInfo.ArgumentList.Add("4"); // Number of pings to send; adjust if needed
+            processStartInfo.ArgumentList.Add(ip);
             Process? process = Process.Start(processStartInfo);
             if (process != null)
             {
                 process.WaitForExit();
             }
-            return commandToExecute;
+            return $"ping -c 4 {ip}";
         }
 
         // POST api/<SecurityTestController>
