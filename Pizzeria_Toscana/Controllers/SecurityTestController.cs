@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -21,8 +22,12 @@ namespace Pizzeria_Toscana.Controllers
         [HttpGet("{ip}")]
         public string Get(string ip)
         {
-            var commandToExecute = "ping -c " + ip;
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe", "-c \"" + commandToExecute + "\"");
+            // Validate the ip parameter to avoid command injection
+            if (string.IsNullOrWhiteSpace(ip) || !(System.Net.IPAddress.TryParse(ip, out _) || IsValidHostName(ip)))
+                throw new ArgumentException("Invalid IP address or hostname.", nameof(ip));
+
+            var commandToExecute = $"ping -c {ip}";
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("ping", $"-c {ip}");
             Process? process = Process.Start(processStartInfo);
             if (process != null)
             {
@@ -47,6 +52,23 @@ namespace Pizzeria_Toscana.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+        // Hostname validation: allows letters, digits, dash, and dot, max length 253, label length 63, basic check
+        private static bool IsValidHostName(string host)
+        {
+            if (string.IsNullOrWhiteSpace(host) || host.Length > 253)
+                return false;
+            var labels = host.Split('.');
+            foreach (var label in labels)
+            {
+                if (label.Length == 0 || label.Length > 63)
+                    return false;
+                if (!System.Text.RegularExpressions.Regex.IsMatch(label, @"^[a-zA-Z0-9-]+$"))
+                    return false;
+                if (label.StartsWith("-") || label.EndsWith("-"))
+                    return false;
+            }
+            return true;
         }
     }
 }
