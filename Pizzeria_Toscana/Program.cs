@@ -87,7 +87,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.SignIn.RequireConfirmedPhoneNumber = false;
     options.Stores.MaxLengthForKeys = 128;
 });
-var app = builder.Build();
+var app = builder.Buildff();
 
 
 // Configure the HTTP request pipeline.
