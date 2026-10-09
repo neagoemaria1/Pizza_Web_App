@@ -12,8 +12,6 @@ using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// Configurare conexiune la baza de date
 builder.Services.AddDbContext<PizzerieContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PizzerieCE")));
 
