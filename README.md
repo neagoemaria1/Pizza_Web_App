@@ -53,3 +53,7 @@ ASP.NET Core Identity manages authentication and distinguishes between regular u
 ### Database Design
 
 A relational data model built with Entity Framework Core, managing users, products, categories, ingredients, shopping carts, and orders through interconnected entities.
+
+## Screenshots
+
+Screenshots showcasing the application's main features and interface can be found [here](./wwwroot/screenshots/).
