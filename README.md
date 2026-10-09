@@ -56,4 +56,4 @@ A relational data model built with Entity Framework Core, managing users, produc
 
 ## Screenshots
 
-Screenshots showcasing the application's main features and interface can be found [here](./wwwroot/screenshots/).
+Screenshots showcasing the application's main features and interface can be found [here](./Pizzeria_Toscana/wwwroot/screenshots/).
